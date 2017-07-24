@@ -4,7 +4,7 @@ Ext.define('ORest.store.Store', {
 	model: 'ORest.model.Model',
 	proxy: { 
 		type: 'ajax', 
-		url: 'http://192.168.0.223:8223/orest/agency',
+		url: 'http://ip:port/orest/agency',
 		reader: {
 			type: 'json'
 		}
