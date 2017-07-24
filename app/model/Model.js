@@ -18,7 +18,7 @@ Ext.define('ORest.model.Model', {
 		type: 'ajax',
 		idParam: 'id',
 		api: { 
-			read: 'http://192.168.0.223:8223/orest/agency'
+			read: 'http://ip:port/orest/agency'
 		},
 		reader: {
 			type: 'json'
