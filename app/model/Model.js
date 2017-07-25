@@ -17,6 +17,7 @@ Ext.define('ORest.model.Model', {
 	proxy: {
 		type: 'ajax',
 		idParam: 'id',
+		defaultHeaders: { 'Content-Type': 'application/json' },
 		api: { 
 			read: 'http://192.168.0.223:8223/orest/agency',
 			create: 'http://192.168.0.223:8223/orest/agency'

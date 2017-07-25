@@ -85,14 +85,14 @@ Ext.define('ORest.view.orest.Form', {
 						itemId: 'deleteBtn',
 						iconCls: 'delete',
 						text: 'Delete',
-						handler: function () {alert('so this is Delete!');}
+						handler: function () {console.log('so this is Delete!');}
 					
 					}, {
 						xtype: 'button',
 						itemId: 'saveBtn',
 						iconCls: 'save',
 						text: 'Save',
-						handler: function () {alert('so this is Save!');}
+						handler: function () {console.log('so this is Save!');}
 
 					}]
 				}]
