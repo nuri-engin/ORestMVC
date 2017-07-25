@@ -1,7 +1,10 @@
 Ext.define('ORest.view.Cards', {	
 	extend: 'Ext.container.Container',
 	xtype: 'thecards',
-	requires: ['Ext.layout.container.Card', 'ORest.view.orest.ManageOrest'],
+	requires: [
+		'Ext.layout.container.Card', 			
+		'ORest.view.orest.ManageOrest'
+	],
 	layout: 'card',
 	initComponent: function() {
 		var me = this;

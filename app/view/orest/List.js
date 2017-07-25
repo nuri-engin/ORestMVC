@@ -13,9 +13,7 @@ Ext.define('ORest.view.orest.List', {
 			tools: [{
 				type: 'refresh',
 				tooltip: 'Refresh the DB',
-				handler: function() {
-							alert('ahaa! a new list!!');
-						}
+				handler: function() {alert('ahaa! a new list!!');}
 			}],
 			columns: [{
 				xtype: 'numbercolumn',

@@ -18,10 +18,18 @@ Ext.define('ORest.model.Model', {
 		type: 'ajax',
 		idParam: 'id',
 		api: { 
-			read: 'http://192.168.0.223:8223/orest/agency'
+			read: 'http://192.168.0.223:8223/orest/agency',
+			create: 'http://192.168.0.223:8223/orest/agency'
 		},
 		reader: {
 			type: 'json'
+		},
+		writer: {
+			type: 'json',
+			allowSingle: false,
+			encode: true,
+			rootProperty: 'data',
+			writeAllFields: true 
 		}
 	}
 });

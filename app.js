@@ -3,21 +3,15 @@ Ext.Loader.setConfig({
 });
 
 Ext.application({
-    models: [
-        'Model'
-    ],
-    stores: [
-        'Store'
-    ],
-    views: [
-        'Main'
-    ],
+    models: ['Model'],
+    stores: ['Store'],
+    views: ['Main'],
+    controllers: ['Controller'],
     name: 'ORest',
 
-    mainView: 'ORest.view.Main',
+    //mainView: 'ORest.view.Main',
 
-    launch: function() {
-	console.log('Deneme bir iki');    
+    launch: function() { 
 	Ext.create('ORest.view.Main');
     }
 });

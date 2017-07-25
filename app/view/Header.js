@@ -29,9 +29,7 @@ Ext.define('ORest.view.Header', {
 				}, {
 					xtype: 'button',
 					text: 'Search',
-					handler: function() {
-						alert('so... it works =)');
-					}
+					handler: function() {alert('so... it works =)');}
 				}]
 			}]
 		});

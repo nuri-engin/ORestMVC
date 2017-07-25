@@ -6,7 +6,8 @@ Ext.define('ORest.store.Store', {
 		type: 'ajax', 
 		url: 'http://192.168.0.223:8223/orest/agency',
 		reader: {
-			type: 'json'
+			type: 'json',
+			rootProperty: 'data'
 		}
 	},
 	autoLoad: true

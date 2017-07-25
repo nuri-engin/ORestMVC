@@ -1,7 +1,12 @@
 Ext.define('ORest.view.orest.Form', {
 	extend: 'Ext.form.Panel',
 	xtype: 'theform',
-	requires: ['Ext.form.FieldSet', 'Ext.form.field.Radio', 'Ext.form.RadioGroup', 'Ext.toolbar.Toolbar'],
+	requires: [
+		'Ext.form.FieldSet', 
+		'Ext.form.field.Radio', 
+		'Ext.form.RadioGroup', 
+		'Ext.toolbar.Toolbar'
+	],
 	layout: {
 		type: 'anchor'	
 	},
@@ -10,7 +15,20 @@ Ext.define('ORest.view.orest.Form', {
 	autoScroll: true,
 	initComponent: function() {
 		var me = this;
-		Ext.applyIf(me, {
+		Ext.apply(me, {
+			dockedItems: [{
+				xtype: 'toolbar',
+				dock: 'top',
+				items: [{
+					xtype: 'button',
+					itemId: 'addRecordBtn',
+					iconCls: 'addnew',
+					text: 'Add New Record',
+					handler: function() {
+                        			console.log('haha');
+                   			}
+				  }]
+       			    }],
 			items: [{
 				xtype: 'fieldset',
 				padding: 10,
@@ -67,17 +85,15 @@ Ext.define('ORest.view.orest.Form', {
 						itemId: 'deleteBtn',
 						iconCls: 'delete',
 						text: 'Delete',
-						handler: function() {
-							alert('nooo! you deleted!!');
-						}					
+						handler: function () {alert('so this is Delete!');}
+					
 					}, {
 						xtype: 'button',
 						itemId: 'saveBtn',
 						iconCls: 'save',
 						text: 'Save',
-						handler: function() {
-							alert('yayy! you saved!!');
-						}
+						handler: function () {alert('so this is Save!');}
+
 					}]
 				}]
 			}]
